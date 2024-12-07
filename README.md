@@ -42,14 +42,37 @@ cd TelaGo
 npm install
 ```
 
-4. Crie um arquivo `.env` na raiz do projeto e adicione sua chave da API:
-```env
-TMDB_API_KEY=sua_chave_aqui
-```
+4. Configure as variáveis de ambiente:
+   - Copie o arquivo `example.env` para `.env`:
+   ```bash
+   cp example.env .env
+   ```
+   - Abra o arquivo `.env` e configure suas variáveis:
+   ```env
+   TMDB_API_KEY=sua_key_aqui    
+   TMDB_ACCESS_TOKEN=seu_token_aqui
+   PORT=3000
+   ```
 
 5. Inicie o servidor:
 ```bash
 npm start
+```
+
+## 🔑 Configuração
+
+O arquivo `example.env` contém todas as variáveis de ambiente necessárias para o projeto:
+
+```env
+# Configurações da API TMDB
+TMDB_API_KEY=sua_key_aqui
+TMDB_ACCESS_TOKEN=seu_token_aqui
+
+# Configurações do Servidor
+PORT=3000
+NODE_ENV=development
+
+# Outras configurações...
 ```
 
 ## 🎨 Estrutura do Projeto
@@ -60,7 +83,9 @@ TelaGo/
 ├── styles.css      # Estilos globais
 ├── index.html      # Estrutura da página
 ├── server.js       # Servidor Node.js
-└── config.js       # Configurações da API
+├── config.js       # Configurações da API
+├── .env           # Variáveis de ambiente (criar baseado no example.env)
+└── example.env    # Exemplo de configuração
 ```
 
 ## 🤝 Contribuindo
