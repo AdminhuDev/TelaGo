@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TelaGo - Streaming de Filmes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="TelaGo - Sua plataforma de streaming favorita">
+    
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <span class="material-icons logo">play_circle_filled</span>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid px-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <span class="material-icons logo">play_circle_filled</span>
+                TelaGo
+            </a>
+
+            <!-- Menu Principal -->
+            <div class="navbar-nav main-nav">
+                <a class="nav-link active" href="#">Início</a>
+                <a class="nav-link" href="#">Séries</a>
+                <a class="nav-link" href="#">Filmes</a>
+                <a class="nav-link" href="#">Bombando</a>
+                <a class="nav-link" href="#">Minha Lista</a>
+                <a class="nav-link" href="#">Navegar por Idiomas</a>
+            </div>
+
+            <!-- Menu Secundário -->
+            <div class="navbar-nav secondary-nav">
+                <div class="nav-item search-box">
+                    <button class="nav-link search-toggle">
+                        <span class="material-icons">search</span>
+                    </button>
+                    <div class="search-input">
+                        <span class="material-icons">search</span>
+                        <input type="text" placeholder="Títulos, pessoas, gêneros">
+                        <div class="search-results">
+                            <!-- Resultados serão inseridos aqui -->
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-link" href="#">
+                    <span class="material-icons">notifications</span>
+                </a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        <img src="https://via.placeholder.com/32" alt="Perfil" class="profile-img">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">
+                            <img src="https://via.placeholder.com/32" alt="Perfil 1" class="profile-img-small">
+                            <span>Perfil 1</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="https://via.placeholder.com/32" alt="Perfil 2" class="profile-img-small">
+                            <span>Perfil 2</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Gerenciar perfis</a>
+                        <a class="dropdown-item" href="#">Transferir perfil</a>
+                        <a class="dropdown-item" href="#">Conta</a>
+                        <a class="dropdown-item" href="#">Central de Ajuda</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="featured-content">
+        <div class="featured-slider">
+            <!-- Slides serão inseridos via JavaScript -->
+        </div>
+        <button class="featured-arrow prev">
+            <span class="material-icons">chevron_left</span>
+        </button>
+        <button class="featured-arrow next">
+            <span class="material-icons">chevron_right</span>
+        </button>
+        <div class="featured-controls">
+            <!-- Indicadores serão inseridos via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <div class="content-container">
+        <!-- Em alta -->
+        <section class="content-section" id="trending">
+            <h2 class="section-title">Em alta</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Continuar Assistindo -->
+        <section class="content-section" id="continue-watching">
+            <h2 class="section-title">Continuar Assistindo</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Lançamentos -->
+        <section class="content-section" id="new-releases">
+            <h2 class="section-title">Lançamentos</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Filmes de Ação -->
+        <section class="content-section" id="action-movies">
+            <h2 class="section-title">Filmes de Ação</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Comédias -->
+        <section class="content-section" id="comedies">
+            <h2 class="section-title">Comédias</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Filmes de Terror -->
+        <section class="content-section" id="horror">
+            <h2 class="section-title">Terror</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Documentários -->
+        <section class="content-section" id="documentaries">
+            <h2 class="section-title">Documentários</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Filmes de Ficção Científica -->
+        <section class="content-section" id="sci-fi">
+            <h2 class="section-title">Ficção Científica</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Filmes de Animação -->
+        <section class="content-section" id="animation">
+            <h2 class="section-title">Animação</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Filmes de Drama -->
+        <section class="content-section" id="drama">
+            <h2 class="section-title">Drama</h2>
+            <div class="content-slider">
+                <div class="slider-wrapper">
+                    <div class="content-row">
+                        <!-- Cards serão inseridos via JavaScript -->
+                    </div>
+                </div>
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <span class="material-icons">chevron_left</span>
+                </button>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <span class="material-icons">chevron_right</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de Detalhes -->
+    <div class="modal fade" id="content-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="material-icons">close</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-preview">
+                        <img src="" alt="" class="preview-img">
+                        <div class="preview-overlay">
+                            <button class="btn btn-play">
+                                <span class="material-icons">play_arrow</span>
+                                Assistir
+                            </button>
+                        </div>
+                        <div class="video-container" style="display: none;">
+                            <div id="player" data-plyr-provider="youtube"></div>
+                        </div>
+                    </div>
+                    <div class="content-info">
+                        <h2 class="content-title"></h2>
+                        <div class="content-metadata">
+                            <span class="match"></span>
+                            <span class="year"></span>
+                            <span class="duration"></span>
+                            <span class="quality">HD</span>
+                        </div>
+                        <p class="content-description"></p>
+                        <div class="content-cast">
+                            <strong>Elenco:</strong>
+                            <span class="cast-list"></span>
+                        </div>
+                        <div class="content-genres">
+                            <strong>Gêneros:</strong>
+                            <span class="genre-list"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template do Card -->
+    <template id="content-card-template">
+        <div class="content-card">
+            <div class="card-preview">
+                <img src="" alt="" class="card-img" loading="lazy">
+                <div class="card-hover">
+                    <div class="hover-info">
+                        <h3 class="card-title"></h3>
+                        <div class="hover-controls">
+                            <button class="btn-play-small" aria-label="Reproduzir">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                            <button class="btn-add" aria-label="Adicionar à lista">
+                                <span class="material-icons">add</span>
+                            </button>
+                            <button class="btn-like" aria-label="Curtir">
+                                <span class="material-icons">thumb_up</span>
+                            </button>
+                            <button class="btn-more" aria-label="Mais informações">
+                                <span class="material-icons">expand_more</span>
+                            </button>
+                        </div>
+                        <div class="metadata-row">
+                            <span class="match">98% relevante</span>
+                            <span class="rating" data-rating="14">14</span>
+                            <span class="duration">1h 30min</span>
+                        </div>
+                        <div class="genres">
+                            <span>Ação</span>
+                            <span>Aventura</span>
+                            <span>Sci-Fi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="/config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
