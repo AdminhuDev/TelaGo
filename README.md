@@ -49,7 +49,7 @@ npm install
    ```
    - Abra o arquivo `.env` e configure suas variáveis:
    ```env
-   TMDB_API_KEY=sua_key_aqui    
+   TMDB_API_KEY=sua_key_aqui
    TMDB_ACCESS_TOKEN=seu_token_aqui
    PORT=3000
    ```
@@ -65,7 +65,6 @@ O arquivo `example.env` contém todas as variáveis de ambiente necessárias par
 
 ```env
 # Configurações da API TMDB
-TMDB_API_KEY=sua_key_aqui
 TMDB_ACCESS_TOKEN=seu_token_aqui
 
 # Configurações do Servidor

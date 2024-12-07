@@ -1273,3 +1273,62 @@ body {
     scrollbar-width: thin;
     scrollbar-color: var(--primary-color) transparent;
 }
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 15px 0;
+    background: linear-gradient(to top,
+        var(--background-color) 0%,
+        rgba(10, 15, 28, 0.95) 50%,
+        rgba(10, 15, 28, 0.8) 100%
+    );
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(123, 44, 191, 0.2);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #8f33db;
+    text-shadow: 0 0 10px rgba(123, 44, 191, 0.3);
+}
+
+.heart {
+    display: inline-block;
+    color: #E50914;
+    animation: heartbeat 1.5s ease infinite;
+    filter: drop-shadow(0 0 5px rgba(229, 9, 20, 0.3));
+    margin: 0 3px;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); opacity: 0.8; }
+    25% { transform: scale(1.2); opacity: 1; }
+    50% { transform: scale(1); opacity: 0.8; }
+    75% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
