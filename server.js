@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 // Rota para configuração
 app.get('/config.js', (req, res) => {
     res.type('application/javascript');
-    res.send(`window.ACCESS_TOKEN = "${process.env.ACCESS_TOKEN}";`);
+    res.send(`window.ACCESS_TOKEN = "${process.env.TMDB_ACCESS_TOKEN}";`);
 });
 
 // Iniciar servidor
